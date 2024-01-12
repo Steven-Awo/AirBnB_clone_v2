@@ -16,8 +16,8 @@ def do_clean(numbr=0):
     If numb is 2, keeps only the top 2 most recent archiveser,
     etc.
     """
-    numbr = 1 if int(numbr) == 0 else int(numbr)
 
+    numbr = max(1, int(numbr))
     archiveser = sorted(os.listdir("versions"))
     [archiveser.pop() for i in range(numbr)]
     with lcd("versions"):
