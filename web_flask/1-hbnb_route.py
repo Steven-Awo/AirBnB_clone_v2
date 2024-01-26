@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""Starting a flask's web app
+"""
+Starting a flask's web app
 """
 
 from flask import Flask
-
 app = Flask(__name__)
 
 
 @app.route('/')
-def hello_flask():
+def hello():
     """
     Returning the string to when the route queried
     """
