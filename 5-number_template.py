@@ -3,7 +3,7 @@
 Starting a web application that has two routings
 """
 
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 
